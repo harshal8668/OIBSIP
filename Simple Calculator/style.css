@@ -1,0 +1,96 @@
+@import url("https://fonts.google.com/specimen/Damion");
+@import url("https://fonts.google.com/specimen/Big+Shoulders+Display");
+
+body{
+    background:linear-gradient(to bottom,rgb(230, 166, 166),rgb(184, 184, 243));
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+.container{
+    border-radius: 10px;
+    border: 3px solid black;
+    margin: 10vw auto;
+    max-width: fit-content;
+    padding-top: 0%;
+    padding: 10px 20px;
+    margin-bottom: 47.5vh;
+
+    background-color: rgb(243, 191, 191);
+}
+
+.table-border td{
+    border: 1px solid rgb(140, 137, 137);
+    border-radius: 5px;
+    border-collapse: collapse;
+}
+table{
+    margin-bottom: 10px;
+}
+td{
+    padding: 0px;
+}
+input{
+    border: none;
+    width: 51px;
+    height: 51px;
+    margin: 0%;
+    padding: 0%;
+    border-radius: 5px;
+}
+.screen{
+    width:98%;
+    border-radius: 5px;
+    height: 41px;
+    margin-bottom: 10px;
+    padding-left: 2px;
+    border: 2px solid rgb(197, 16, 116);
+}
+.screen:focus{
+    background-color: rgb(253, 234, 248);
+}
+.equal-btn{
+    height: 108px;
+
+}
+input[type=button]{
+    background-color: rgb(166, 247, 247);
+    font-size: larger;
+}
+input[type=button]:hover{
+    background-color: rgb(137, 192, 192);
+}
+
+td:hover{
+    transform: scale(1.05);
+    border: 1px solid black;
+    background-color: black;
+    color: aqua;
+    background: transparent;
+}
+p, footer{
+    margin-top: auto;
+    text-align: center;
+}
+p{
+    font-weight: 1000;
+    text-decoration:underline;
+    text-decoration-style:double;
+    font-size: x-large;
+    font-family: Big Shoulders Display;
+}
+footer{
+    font-size: smaller;
+    font-family: Damion;
+}
+@media screen and (max-width:270px) {
+    input{
+        width: 30px;
+        height: 30px;
+    }
+    .equal-btn{
+        height: 68px;
+    }
+    .screen{
+        width: 150px;
+    }
+}
