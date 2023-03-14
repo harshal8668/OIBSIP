@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>To-Do-App</title>
+</head>
+<body>
+        <h1>TO-DO APP</h1>
+        <div class="add-task-container">
+            <label for="title">Title:</label><br>
+            <input type="text" placeholder="Enter title" id="title" name="title" required><br>
+            <label for="description">Description:</label><br>
+            <textarea placeholder="Enter Description" id="description" name="description" cols="30" rows="5" required></textarea><br>
+            <button id="btn" onclick="addtask()">Add Task</button>
+        </div>
+        <div id="filter">
+            
+            <button class="filter-opt" onclick="displayAll()">All</button>
+            <button class="filter-opt" onclick="displayComplete()">Completed</button>
+            <button class="filter-opt" onclick="displayPending()">Pending</button>
+        </div>
+        
+       
+        <div>
+            <div class="task-head-container">
+                <div class="title">Title</div>
+                <div class="description">Description</div>
+                <div class="delete">Delete</div>
+            </div>
+        </div>
+        <div id="newtask">
+
+        </div>
+        <script src="./todo.js"></script>
+</body>
+</html>
